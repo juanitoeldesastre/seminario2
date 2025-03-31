@@ -1,6 +1,6 @@
 # Tarea01 – HT-02
 
-(app.png)
+![APP](https://raw.githubusercontent.com/juanitoeldesastre/seminario2/main/Tarea01/app.PNG)
 
 ## Descripción
 Esta aplicación permite a los visitantes registrar su entrada y salida de manera sencilla y efectiva. Diseñada para mejorar la eficiencia y seguridad en el control de accesos, ofrece una interfaz intuitiva y un sistema de gestión completo para las visitas diarias.
@@ -36,4 +36,4 @@ Esta aplicación permite a los visitantes registrar su entrada y salida de maner
 
 Este proyecto está bajo la Licencia MIT - consulta el archivo LICENSE para más detalles.
 
-## Juan Piero Vincha Loza
+## ESTUDIANTE : Juan Piero Vincha Loza
