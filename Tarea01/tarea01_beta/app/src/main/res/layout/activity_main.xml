@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/edit_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:autofillHints="name"
+        android:hint="Ingresa tu nombre"
+        android:inputType="textPersonName"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/text_empresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/empresa"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/edit_empresa"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Ingresa la empresa"
+        android:inputType="text"
+        android:autofillHints="organizationName"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/text_proposito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/proposito"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/edit_proposito"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:autofillHints="purpose"
+        android:hint="Ingrese su propósito de la visita"
+        android:inputType="text"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/btn_registrar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/registrar"
+        android:minHeight="48dp"
+        android:padding="8dp"/>
+
+    <ListView
+        android:id="@+id/list_visitas"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:divider="@color/blue"
+        android:dividerHeight="1dp"/>
+</LinearLayout>

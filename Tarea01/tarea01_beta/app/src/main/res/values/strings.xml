@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">tarea01_beta</string>
+    <string name="nombre">Nombre</string>
+    <string name="empresa">Empresa</string>
+    <string name="proposito">Propósito de la visita</string>
+    <string name="registrar">Registrar Visita</string>
+</resources>
