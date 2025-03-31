@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tarea01</string>
+    <string name="nombre">Nombre</string>
+    <string name="empresa">Empresa</string>
+    <string name="proposito">Propósito de la visita</string>
+    <string name="registrar">Registrar Visita</string>
+    <string name="registrar_salida">Registrar Salida</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="activa">ACTIVA</string>
+    <string name="finalizada">FINALIZADA</string>
+</resources>
