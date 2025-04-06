@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tarea02</string>
+    <string name="action_settings">Configuración</string>
+    <string name="title_activity_lawyers">Lawyers App</string>
+    <string name="title_activity_lawyer_detail">Detalle de Abogado</string>
+    <string name="title_activity_add_lawyer">Nuevo Abogado</string>
+    <string name="title_activity_edit_lawyer">Editar Abogado</string>
+
+</resources>

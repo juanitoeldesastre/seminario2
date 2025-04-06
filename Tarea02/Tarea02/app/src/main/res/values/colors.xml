@@ -1,0 +1,16 @@
+<resources>
+    <!-- Define the colors referenced in your theme -->
+    <color name="colorPrimary">#6200EE</color> <!-- Main brand color -->
+    <color name="colorPrimaryDark">#3700B3</color> <!-- Darker shade for status bar or toolbars -->
+    <color name="colorAccent">#03DAC5</color> <!-- Accent color used for floating action buttons, links, etc. -->
+
+    <color name="purple_500">#9C27B0</color> <!-- Primary purple -->
+    <color name="purple_200">#E1BEE7</color> <!-- Light purple color -->
+    <color name="purple_700">#7B1FA2</color> <!-- Darker purple color -->
+    <color name="white">#FFFFFF</color> <!-- White color -->
+    <color name="teal_200">#03DAC5</color> <!-- Light teal -->
+    <color name="teal_700">#018786</color> <!-- Darker teal -->
+    <color name="black">#000000</color> <!-- Black color -->
+
+    <color name="hex">#a2c4c9</color>
+</resources>
