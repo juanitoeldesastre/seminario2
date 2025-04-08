@@ -24,12 +24,14 @@ Para ejecutar esta API de Flask, sigue estos pasos:
 python app.py
 ```
 
-### Credenciales de prueba
+## Endpoints de la API
 
-La API viene con tres usuarios predefinidos para probar:
-- **Analista**: empleado1@finco.com / password123
-- **Gerente**: empleado2@finco.com / secure456
-- **Administrador**: admin@finco.com / admin789
+| Endpoint | Método | Descripción | Autenticación requerida |
+|----------|--------|-------------|------------------------|
+| `/login` | POST | Autentica al usuario y devuelve un token JWT | No |
+| `/profile` | GET | Devuelve información del perfil del usuario actual | Sí |
+| `/logout` | POST | Cierra la sesión invalidando el token | Sí |
+| `/users` | GET | Devuelve la lista de todos los usuarios (solo para administradores) | Sí |
 
 ## Descripción de los endpoints
 
@@ -64,3 +66,12 @@ Para un entorno de producción, deberías considerar:
 3. **Despliegue**:
    - Desplegar en un servicio como Heroku, AWS, Google Cloud, etc.
    - Configurar variables de entorno para las credenciales sensibles
+
+
+![FinCo App Screenshot](https://raw.githubusercontent.com/juanitoeldesastre/seminario2/main/Tarea03/img/apilogin.PNG)
+
+### Backend
+- Python 3
+- Flask
+- PyJWT (para generación y validación de tokens)
+- Autenticación mediante tokens JWT
