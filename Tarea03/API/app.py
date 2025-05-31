@@ -1,4 +1,4 @@
-cd# app.py
+# app.py
 from flask import Flask, request, jsonify
 import jwt
 from datetime import datetime, timedelta
