@@ -1,5 +1,6 @@
 const connection = require('../config/db');
 
+// Operación de Creación
 exports.crearProducto = (req, res) => {
     const producto = {
         nombre: req.body.nombre,
@@ -14,13 +15,13 @@ exports.crearProducto = (req, res) => {
     });
 };
 
+// Operación de Lectura
 exports.listarProductos = (req, res) => {
     connection.query("SELECT * FROM productos", (err, results) => {
         if (err) throw err;
         res.json(results);
     });
 };
-
 exports.obtenerProductoPorId = (req, res) => {
     const id = req.params.id;
     connection.query("SELECT * FROM productos WHERE id = ?", [id], (err, result) => {
@@ -29,6 +30,7 @@ exports.obtenerProductoPorId = (req, res) => {
     });
 };
 
+// Operación de Actualización
 exports.actualizarProducto = (req, res) => {
     const id = req.params.id;
     const productoActualizado = {
@@ -44,6 +46,7 @@ exports.actualizarProducto = (req, res) => {
     });
 };
 
+// Operación de Eliminación
 exports.eliminarProducto = (req, res) => {
     const id = req.params.id;
     connection.query("DELETE FROM productos WHERE id = ?", [id], (err, result) => {
