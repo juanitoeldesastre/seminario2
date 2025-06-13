@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import './ContactForm.css';
+
 function ContactForm() {
     const [formData, setFormData] = useState({ name: '', surname: '' ,email: '', phone: '', message: '' });
     const handleChange = (e) => {
@@ -10,7 +12,8 @@ function ContactForm() {
         alert(`Gracias por contactarnos, ${formData.name}!`);
     };
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="contact-form" onSubmit={handleSubmit}>
+            <span>Contáctanos</span>
             <input type="text" name="name" placeholder="Nombre" onChange={handleChange}
             />
             <input type="email" name="email" placeholder="Email" onChange={handleChange}
