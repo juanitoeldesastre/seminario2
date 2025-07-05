@@ -1,0 +1,14 @@
+name: modelo-ml
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9.23
+  - cudatoolkit=11.2
+  - cudnn=8.1.0
+  - pip
+  - pip:
+      - tensorflow==2.10.1
+      - numpy==1.26.4
+      - matplotlib
+      - scikit-learn
