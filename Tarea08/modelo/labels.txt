@@ -1,0 +1,5 @@
+0 Ara macao
+1 Larosterna inca
+2 Rupicola peruvianus
+3 Steatornis caripensis
+4 Vanellus resplendens
