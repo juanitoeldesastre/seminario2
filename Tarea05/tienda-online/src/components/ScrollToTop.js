@@ -6,6 +6,19 @@ function ScrollToTop() {
 
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        const handleClick = (e) => {
+            const enlace = e.target.closest('a');
+            if (enlace && enlace.getAttribute('href') === pathname) {
+                window.scrollTo({ top: 0, behavior: 'auto' });
+            }
+        };
+
+        document.addEventListener('click', handleClick);
+
+        return () => {
+            document.removeEventListener('click', handleClick);
+        };
     }, [pathname]);
 
     return null;
