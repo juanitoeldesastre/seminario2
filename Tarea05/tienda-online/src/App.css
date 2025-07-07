@@ -1,0 +1,18 @@
+/* Asegura altura completa */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estructura de la app en columna */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* El contenido principal se expande */
+.main-content {
+  flex: 1;
+}

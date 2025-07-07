@@ -5,3 +5,4 @@ export { default as ProductList } from './ProductList';
 export { default as Cart } from './Cart';
 export { default as ContactForm } from './ContactForm';
 export { default as NotFoundPage } from './NotFoundPage';
+export { default as TermsAndConditions } from './TermsAndConditions';
