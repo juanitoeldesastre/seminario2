@@ -1,11 +1,12 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Navbar, Header, Footer, ProductList, Cart, ContactForm, NotFoundPage, TermsAndConditions } from './components/';
+import { Navbar, Header, Footer, ProductList, Cart, ContactForm, NotFoundPage, TermsAndConditions, ScrollToTop } from './components/';
 import './App.css';
 
 function App() {
     return (
         <div className="app">
             <Router>
+                <ScrollToTop />
                 <Header />
                 <Navbar />
                 <main className="main-content">
