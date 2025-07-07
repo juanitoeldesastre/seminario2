@@ -1,13 +1,11 @@
 .contact-form {
     max-width: 500px;
     margin: 40px auto;
-    padding: 30px;
-    background-color: #ffffff;
-    color: #000000;
+    padding: 40px;
     font-family: 'Lora', serif;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 12px;
     border: 1px solid #000;
     border-radius: 4px;
     box-sizing: border-box;
@@ -15,7 +13,6 @@
 
 .contact-form span {
     font-size: 40px;
-    font-family: 'Lora', serif;
 }
 
 .contact-form input,
@@ -26,9 +23,8 @@
     padding: 10px 12px;
     font-size: 1rem;
     font-family: 'Lora', serif;
-    border-radius: 2px;
+    border-radius: 4px;
     box-sizing: border-box;
-    outline: none;
     transition: border-color 0.2s ease;
 }
 
@@ -40,6 +36,7 @@
 .contact-form input:focus,
 .contact-form textarea:focus {
     border-color: #333;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .contact-form textarea {
@@ -48,14 +45,13 @@
 }
 
 .contact-form button {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #fff;
     border: 1px solid #000000;
     padding: 12px;
     font-weight: bold;
-    border-radius: 2px;
-    font-family: 'Lora', serif;
+    border-radius: 4px;
     cursor: pointer;
+    margin-top: 4px;
     transition: all 0.3s ease;
 }
 
