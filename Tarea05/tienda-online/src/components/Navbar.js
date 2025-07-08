@@ -5,7 +5,7 @@ function Navbar() {
     return (
         <nav className="navbar">
             <Link to="/" className="logo-link">
-                <img src="/images/logo.png" alt="Logo Artesano" className="logo-img" />
+                <img src="/images/logo.webp" alt="Logo Artesano" className="logo-img" />
             </Link>
 
             <ul className="nav-links">

@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Navbar, Header, Footer, ProductList, Cart, ContactForm, NotFoundPage, TermsAndConditions, ScrollToTop } from './components/';
+import { Home, Navbar, Header, Footer, ProductList, Cart, ContactForm, NotFoundPage, TermsAndConditions, ScrollToTop } from './components/';
 import './App.css';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
                 <Navbar />
                 <main className="main-content">
                     <Routes>
-                        <Route path="/" element={<ProductList />} />
+                        <Route path="/" element={<Home />} />
                         <Route path="/products/:id" element={<h2>Detalle del Producto</h2>} />
                         <Route path="/cart" element={<Cart />} />
                         <Route path="/contacto" element={<ContactForm />} />
