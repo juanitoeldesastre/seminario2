@@ -1,0 +1,47 @@
+.privacidad-container,
+.terms-container {
+    font-family: 'Lora', serif;
+    color: #000;
+    background-color: #fff;
+    padding: 40px 20px;
+    max-width: 960px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.privacidad-container h1,
+.terms-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+}
+
+.privacidad-container h2,
+.terms-container h2 {
+    font-size: 1.3rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.privacidad-container p,
+.terms-container p,
+.privacidad-container ul,
+.terms-container ul {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.privacidad-container li,
+.terms-container li {
+    margin-left: 1.5em;
+    list-style-type: disc;
+    line-height: 1.6;
+}
+
+.privacidad-container strong,
+.terms-container strong {
+    font-weight: bold;
+}

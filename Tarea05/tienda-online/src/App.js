@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Home, Navbar, Header, Footer, ProductList, Cart, ContactForm, NotFoundPage, TermsAndConditions, ScrollToTop, Privacidad } from './components/';
+import { Home, Navbar, Header, Footer, ProductList, Cart, ContactForm, NotFoundPage, TermsAndConditions, ScrollToTop, PrivacyPolicy } from './components/';
 import './App.css';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
                         <Route path="/products/:id" element={<h2>Detalle del Producto</h2>} />
                         <Route path="/cart" element={<Cart />} />
                         <Route path="/contacto" element={<ContactForm />} />
-                        <Route path="/privacidad" element={<Privacidad />} />
+                        <Route path="/privacidad" element={<PrivacyPolicy />} />
                         <Route path="/terminos-y-condiciones" element={<TermsAndConditions />} />
                         <Route path="*" element={<NotFoundPage />} />
                     </Routes>
