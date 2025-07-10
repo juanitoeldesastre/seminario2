@@ -33,20 +33,18 @@
 }
 
 .slider-contenido h1 {
-    font-size: 3rem;
-    margin-bottom: 0;
-    margin-top: 0;
+    font-size: 2rem;
+    margin: 0;
 }
 
 .slider-contenido p {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-    margin-top: 0;
+    font-size: 1rem;
+    margin: 0 0 30px 0;
 }
 
 .btn-grande {
     padding: 16px 32px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     background-color: #ffffff;
     color: #000000;
     border: none;
@@ -89,8 +87,9 @@
     right: 20px;
 }
 
+/* SOBRE NOSOTROS */
 .sobre-nosotros {
-    padding: 60px 20px;
+    padding: 40px 20px;
     background-color: #fff;
     text-align: center;
 }
@@ -115,8 +114,7 @@
 
 .sobre-nosotros h2 {
     font-size: 2rem;
-    margin-bottom: 10px;
-    margin-top: 0;
+    margin: 0 0 10px 0;
     font-family: 'Lora', serif;
 }
 
@@ -129,15 +127,57 @@
 }
 
 .destacados {
-    padding: 60px 20px;
-    text-align: center;
     background-color: #fff;
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
-.destacados h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+.destacados .contenido {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.destacados-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.destacados-descripcion {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    font-size: 1rem;
+    line-height: 1.6;
     font-family: 'Lora', serif;
+    text-align: left;
+}
+
+.destacados-header h2 {
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Lora', serif;
+}
+
+.btn-ver-todo {
+    background-color: #f2a365;
+    color: white;
+    font-family: 'Lora', serif;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ver-todo:hover {
+    background-color: #d87c33;
 }
 
 .cards-container {
@@ -154,6 +194,9 @@
     overflow: hidden;
     width: 300px;
     transition: transform 0.3s;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 .card:hover {
@@ -167,23 +210,31 @@
 }
 
 .card h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 10px 0;
     font-family: 'Lora', serif;
 }
 
-.btn-card {
-    display: inline-block;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: bold;
-    transition: background-color 0.3s;
+.card:hover h3 {
+    color: #f2a365;
+    transition: color 0.3s ease;
 }
 
-.btn-card:hover {
-    background-color: #444;
+@media (max-width: 1000px) {
+    .destacados-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .destacados-header h2 {
+        width: 100%;
+        text-align: left;
+    }
+
+    .cards-container {
+        justify-content: center;
+    }
 }
+
+

@@ -1,7 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import './Footer.css';
 
 function Footer() {
+    const navigate = useNavigate();
+    const scrollToHistoria = () => {
+        navigate("/", { state: { scrollTo: "historia" } });
+    };
+
     return (
         <footer className="footer">
             <div className="footer-container">
@@ -13,7 +18,7 @@ function Footer() {
                 <div className="footer-section">
                     <h4>Sobre Artesano</h4>
                     <ul className="footer-links">
-                        <li><Link to="/historia">Historia</Link></li>
+                        <li><button onClick={scrollToHistoria} className="footer-button-link">Historia</button></li>
                         <li><Link to="/preguntas-frecuentes">Preguntas y Respuestas</Link></li>
                         <li><Link to="/ubicaciones">Ubicaciones</Link></li>
                     </ul>
