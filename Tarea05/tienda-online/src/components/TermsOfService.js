@@ -1,6 +1,6 @@
 import './LegalBase.css';
 
-function TermsAndConditions() {
+function TermsOfService() {
     return (
         <div className="terms-container">
             <h1>Términos y Condiciones</h1>
@@ -59,4 +59,4 @@ function TermsAndConditions() {
     );
 }
 
-export default TermsAndConditions;
+export default TermsOfService;
